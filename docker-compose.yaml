@@ -9,22 +9,27 @@ services:
       MONGODB_PASSWORD: mongopwd
       MONGODB_HOST: mongodb
       MONGODB_PORT: 27017
+    volumes:
+      - volume_app:/usr/app/src
     depends_on:
       - mongodb
     ports:
       - "8084:5000"
     networks:
       - roten-potatoes
-
   mongodb:
     image: mongo:4.0.8
     container_name: mongodb
+    volumes:
+      - db_data:/data/db
     environment:
       MONGO_INITDB_ROOT_USERNAME: mongouser
       MONGO_INITDB_ROOT_PASSWORD: mongopwd
     networks:
       - roten-potatoes
-
 networks:
   roten-potatoes:
     driver: bridge
+volumes:
+  db_data: {}
+  volume_app: {}

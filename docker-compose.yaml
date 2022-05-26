@@ -1,0 +1,30 @@
+version: '3'
+services:
+  app:
+    container_name: rotten-potatoes
+    image: rotten-potatoes:v1.0.0
+    environment:
+      MONGODB_DB: admin
+      MONGODB_USERNAME: mongouser
+      MONGODB_PASSWORD: mongopwd
+      MONGODB_HOST: mongodb
+      MONGODB_PORT: 27017
+    depends_on:
+      - mongodb
+    ports:
+      - "8084:5000"
+    networks:
+      - roten-potatoes
+
+  mongodb:
+    image: mongo:4.0.8
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongouser
+      MONGO_INITDB_ROOT_PASSWORD: mongopwd
+    networks:
+      - roten-potatoes
+
+networks:
+  roten-potatoes:
+    driver: bridge

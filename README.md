@@ -17,4 +17,4 @@ OR just build:
 
 ``docker-compose up -d``
 
-![doc](https://raw.githubusercontent.com/felipeschirmann/rotten-potatoes/main/imgs/rotten-potatoes-compose-rotten-potetoes.drawio.svg)
+![doc](https://raw.githubusercontent.com/felipeschirmann/rotten-potatoes/main/imgs/rotten-potatoes-compose-rotten-potetoes.drawio.png)

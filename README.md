@@ -6,3 +6,15 @@ the script build.sh receive arguments the python-version for construct image of 
 
 example: 
 ``bash build.sh python:3.8-slim-buster 1.0.0``
+
+OR just build: 
+
+``docker build . -t felipeschirmann/rotten-potatoes:v1.0.0``
+
+``docker run -d -p 8085:5000 felipeschirmann/rotten-potatoes:v1.0.0``
+
+![doc](https://raw.githubusercontent.com/felipeschirmann/rotten-potetoes/main/imgs/pottetoes.drawio.svg)
+
+``docker-compose up -d``
+
+![doc](https://raw.githubusercontent.com/felipeschirmann/rotten-potetoes/main/imgs/pottetoes.drawio.svg)

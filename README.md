@@ -13,8 +13,8 @@ OR just build:
 
 ``docker run -d -p 8085:5000 felipeschirmann/rotten-potatoes:v1.0.0``
 
-![doc](https://raw.githubusercontent.com/felipeschirmann/rotten-potetoes/main/imgs/pottetoes.drawio.svg)
+![doc](https://raw.githubusercontent.com/felipeschirmann/rotten-potatoes/main/imgs/rotten-potatoes-rotten-potetoes.drawio.svg)
 
 ``docker-compose up -d``
 
-![doc](https://raw.githubusercontent.com/felipeschirmann/rotten-potetoes/main/imgs/pottetoes.drawio.svg)
+![doc](https://raw.githubusercontent.com/felipeschirmann/rotten-potatoes/main/imgs/rotten-potatoes-compose-rotten-potetoes.drawio.svg)
